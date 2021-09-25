@@ -1,0 +1,27 @@
+# RaifHack
+
+Решение основано на алгоритме [LightAutoML](https://github.com/sberbank-ai-lab/LightAutoML) с дополнительным обогащением данных из открытых источников (Росстат).  
+
+## Ключевые моменты
+- Проведен EDA инструментами pandas_profile и сравнениями корреляции метрик разными методами в зависимости от фичей  - 
+[Pandas profiling](https://drive.google.com/file/d/1xQl3LvpX9J0G6gJoaBjzRcBFKZi6QZXz/view?usp=sharing)
+- Введены дополнительные метрики: премиальность этажей и типирование города;
+- Использованы дополнительные стат данные (среднемесячная заработная плата и численность населения по регионам). Источник: Росстат;
+- Учтен дисконт, закладываемый при ручном расчете (использовали вариант из публичного решения). [GitHub](https://github.com/BatyaZhizni/Raifhack-DS)
+
+
+Для обогащения данных использованы дополнительные датасеты:
+
+
+- zarplaty.xlsx - Среднемесячная номинальная начисленная заработная плата работников в целом по экономике по субъектам Российской Федерации за 2000-2020 гг. Источник: [Росстат](https://rosstat.gov.ru/labor_market_employment_salaries).
+[Ссылка](https://docs.google.com/spreadsheets/d/1S1ORmz2W4QTG-d8odUOqT6Czu21NF2Vw/edit?usp=sharing&ouid=108685579276627434305&rtpof=true&sd=true)
+- zarplaty.xlsx - Численность населения по населенным пунктам России. Источник: [Росстат](https://rosstat.gov.ru/folder/12781). [Ссылка](https://drive.google.com/file/d/19hJI_zlTZboxSh_JwPrWt8vYx9lkNlM0/view?usp=sharing)
+
+
+## Установка
+
+```python
+!pip install https://github.com/pandas-profiling/pandas-profiling/archive/master.zip
+!pip install -U lightautoml
+!pip install -U phik
+```
