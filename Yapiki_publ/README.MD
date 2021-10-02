@@ -33,3 +33,5 @@ RaifhackDS - онлайн-хакатон Райффайзенбанка в об�
 !pip install -U lightautoml
 !pip install -U phik
 ```
+## Контакты для связи
+https://t.me/Oksana_O_Golovina - Оксана Головина
